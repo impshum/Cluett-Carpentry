@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+session_unset();
 
 
 if(isset($_SESSION['one-title']) && !empty($_SESSION['one-title'])) {
@@ -9,10 +10,10 @@ if(isset($_SESSION['one-title']) && !empty($_SESSION['one-title'])) {
   $json = file_get_contents('http://localhost:8888/dan/new/config.json');
   $data = json_decode($json);
 
-  $one = $data->projects->posts[0];
-  $two = $data->projects->posts[1];
-  $three = $data->projects->posts[2];
-  $_SESSION["allofit"] = $data->projects->posts;
+  $one = $data->posts[0];
+  $two = $data->posts[1];
+  $three = $data->posts[2];
+  $_SESSION["allofit"] = $data->posts;
   $_SESSION["one-title"] = $one->title;
   $_SESSION["one-subtitle"] = $one->subtitle;
   $_SESSION["one-image"] = $one->image;
