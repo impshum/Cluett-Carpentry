@@ -18,21 +18,6 @@
         </div>
       </div>
 
-      <div class="ae-grid ae-grid--alt au-xs-ptp-1">
-        <div class="ae-grid__item--alt item-lg-4">
-          <h6 class="ae-u-boldest">Title</h6>
-          <p class="au-lh-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="ae-grid__item--alt item-lg-4">
-          <h6 class="ae-u-boldest">Title</h6>
-          <p class="au-lh-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="ae-grid__item--alt item-lg-4">
-          <h6 class="ae-u-boldest">Title</h6>
-          <p class="au-lh-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-
       <p class="au-flex au-pt-4 group-buttons">
         <a href="contact.php" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Get in contact<span class="arrow-cont"><svg><use xlink:href="assets/img/symbols.svg#arrow"></use></svg></span></a>
       </p>
