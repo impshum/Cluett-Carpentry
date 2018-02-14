@@ -1,44 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Cluett Carpentry - Pricing</title>
-    <link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg">
-    <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
-    <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
-    <link rel="stylesheet" href="assets/css/urku.css">
-  </head>
-  <body id="yey" class="top-fixed">
-    <script>
-      document.body.className += ' fade-out';
-    </script>
-    <header class="ae-container-fluid ae-container-fluid--full rk-header ">
-      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
-      <label for="mobile-menu">
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#bar"></use>
-          </svg>
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#bar"></use>
-          </svg>
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#bar"></use>
-          </svg>
-        </label>
-      <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo"><a href="index.html">CLUETT CARPENTRY</a></h1>
-        <nav class="rk-navigation">
-          <ul class="rk-menu">
-            <li class="rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a></li>
-            <li class="rk-menu__item"><a href="about.html" class="rk-menu__link">About</a></li>
-            <li class="active rk-menu__item"><a href="pricing.html" class="rk-menu__link">Pricing</a></li>
-            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<?php include 'partials/header.php';?>
+
     <div class="ae-container-fluid ae-container-fluid--inner rk-main">
+
       <div class="ae-grid au-pt-2">
         <div class="ae-grid__item item-lg-12 item-lg--offset-0">
           <h4 class="ae-u-bolder">Pricing</h4>
@@ -54,6 +17,7 @@
           <p>For more information on the process, please be encouraged to contact Dan for an informal discussion.</p>
         </div>
       </div>
+
       <div class="ae-grid ae-grid--alt au-xs-ptp-1">
         <div class="ae-grid__item--alt item-lg-4">
           <h6 class="ae-u-boldest">Title</h6>
@@ -69,42 +33,10 @@
         </div>
       </div>
 
-      <p class="au-flex au-pt-4 group-buttons"><a href="contact.html" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Get in contact<span class="arrow-cont">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg></span></a></p>
-    </div>
-    <footer class="ae-container-fluid rk-footer ">
-      <div class="ae-grid ae-grid--collapse">
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
-          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">2017 CLUETT CARPENTRY</span></p>
-        </div>
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a href="#0" class="rk-social-btn ">
-              <svg>
-                <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-              </svg></a><a href="#0" class="rk-social-btn ">
-              <svg>
-                <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-              </svg></a><a href="#0" class="rk-social-btn ">
-              <svg>
-                <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-              </svg>
-              </a></div>
-        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-          <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">info@cluettcarpentry.com </a></span></p>
-        </div>
-      </div>
-    </footer>
-    <script src="assets/js/svg4everybody.min.js"></script>
-    <script>
-      function r(f) {
-        /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f()
-      }
+      <p class="au-flex au-pt-4 group-buttons">
+        <a href="contact.php" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Get in contact<span class="arrow-cont"><svg><use xlink:href="assets/img/symbols.svg#arrow"></use></svg></span></a>
+      </p>
 
-      r(function() {
-        document.getElementById("yey").classList.remove("fade-out");
-      });
-      svg4everybody();
-    </script>
-  </body>
-</html>
+    </div>
+
+<?php include 'partials/footer.php';?>
