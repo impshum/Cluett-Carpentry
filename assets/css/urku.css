@@ -568,8 +568,6 @@ textarea {
 }
 
 .rk-item:hover {
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
   transition: .3s;
 }
 
@@ -1850,14 +1848,22 @@ textarea {
 }
 
 .arrow-button--right {
-  margin-right: 0;
-  margin-left: auto;
+  position: absolute;
+  right: 50px;
+}
+.arrow-button--left {
+  position: absolute;
+  left: 50px;
 }
 
 @media (min-width: 75em) {
   .arrow-button--right {
-    margin-right: 0;
-    margin-left: auto;
+    position: absolute;
+    right: 230px;
+  }
+  .arrow-button--left {
+    position: absolute;
+    left: 230px;
   }
 }
 
@@ -1886,7 +1892,7 @@ textarea {
   order: -1;
 }
 
-.arrow-button:hover .arrow-cont {
+.arrow-button--right:hover .arrow-cont {
   -webkit-transform: translateX(.25rem);
   -ms-transform: translateX(.25rem);
   transform: translateX(.25rem);
@@ -2344,7 +2350,12 @@ line-height: 21px;
   height: 100%;
 }
 img.cover {
-  height: 350px;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+img.project {
+  height: 550px;
   object-fit: cover;
 }
 

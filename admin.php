@@ -4,7 +4,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$json = file_get_contents('http://localhost:8888/dan/new/test.json');
+$json = file_get_contents('http://localhost:8888/dan/new/projects.json');
 $data = json_decode($json);
 
 $all = $data->posts;
@@ -17,7 +17,7 @@ $i = 0;
 
 
     <?php
-      echo "<form action='test4.php' method='get'><div class='ae-grid au-xs-ta-center au-mb-4 au-pt-4 json'>";
+      echo "<form action='json_write.php' method='get'><div class='ae-grid au-xs-ta-center au-mb-4 au-pt-4 json'>";
 
       foreach($all as $item) {
         $wooimage = htmlentities('assets/img/projects/' . $item->image);
@@ -28,7 +28,7 @@ $i = 0;
           <input class='woop' name='subtitle[]' type='text' value='$item->subtitle'><br>
           <input class='woop' name='image[]' type='text' value='$item->image'><br>
           <textarea class='woop' name='text[]'>$item->text</textarea><br>
-          <button class='delete'>REMOVE</button><br>
+          <!--button class='delete'>REMOVE</button--><br>
           </div>
 
 
@@ -36,9 +36,8 @@ $i = 0;
           $i++;
       }
 
-      echo "<button id='savejson' value='SUBMIT' type='submit'>SUBMIT</button></form></div>";
+      echo "<button id='savejson' value='SUBMIT' type='submit'>SUBMIT</button><textarea disabled name='trickle' class='i'>$i</textarea></form></div>";
       echo "<button class='add_form_field'>ADD NEW</button>";
-      echo "<div class='i'>$i</div>"
       ?>
       <br>
 
@@ -75,9 +74,7 @@ $i = 0;
   for (var i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', function(e) {
       e.currentTarget.parentNode.remove();
-      //this.closest('.single').remove() // in modern browsers in complex dom structure
-      //this.parentNode.remove(); //this refers to the current target element
-      //e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+      $('input[name=sitebg]').val('000000');
     }, false);
   }
   </script>

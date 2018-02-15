@@ -38,6 +38,7 @@
           <li class="rk-menu__item"><a href="about.php" class="rk-menu__link">About</a></li>
           <li class="rk-menu__item"><a href="pricing.php" class="rk-menu__link">Pricing</a></li>
           <li class="rk-menu__item"><a href="contact.php" class="rk-menu__link">Contact</a></li>
+          <li class="rk-menu__item"><a href="admin.php" class="rk-menu__link">Admin</a></li>
         </ul>
       </nav>
     </div>

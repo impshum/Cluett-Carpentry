@@ -7,16 +7,18 @@
     <div class="rk-portfolio__items">
 
       <?php
+      $i = 0;
       foreach($_SESSION["allofit"] as $item) {
         $wooimage = htmlentities('assets/img/projects/' . $item->image);
           echo "
-          <a href='#' class='rk-item rk-item--flex rk-size-4 rk-tosize-3 rk-square' style='background-image: url($wooimage);'>
+          <a href='projects.php?page=$i' class='rk-item rk-item--flex rk-size-4 rk-tosize-3 rk-square' style='background-image: url($wooimage);'>
             <div class='item-meta'>
               <h2>$item->title</h2>
               <p>$item->subtitle</p>
             </div>
           </a>
           ";
+          $i++;
       }
       ?>
 
