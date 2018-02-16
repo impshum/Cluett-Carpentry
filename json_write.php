@@ -18,7 +18,7 @@ for ($i = 0; $i < $count; $i++) {
    	if (in_array('delete', $value)) {
    		unset($dataDecoded['posts'][$i]);
    	}
-
+   }
  }
 
 $json = json_encode($dataDecoded);
