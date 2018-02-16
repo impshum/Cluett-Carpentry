@@ -21,10 +21,6 @@ for ($i = 0; $i < $count; $i++) {
 
  }
 
-
-
-}
-
 $json = json_encode($dataDecoded);
 file_put_contents('projects.json', $json);
 header('Location: '.'admin.php');
