@@ -18,10 +18,10 @@ for ($i = 0; $i < $count; $i++) {
    	if (in_array('delete', $value)) {
    		unset($dataDecoded['posts'][$i]);
    	}
-   }
  }
+}
 
 $json = json_encode($dataDecoded);
 file_put_contents('projects.json', $json);
-header('Location: '.'admin.php');
- ?>
+header('Location: '.'edit.php');
+?>

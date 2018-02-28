@@ -1,3 +1,4 @@
+<?php include 'partials/session.php';?>
 <?php include 'partials/header.php';?>
 
     <div class="ae-container-fluid ae-container-fluid--inner rk-main">
@@ -5,40 +6,40 @@
       <div class="ae-grid au-pt-2">
         <div class="ae-grid__item item-lg-12 item-lg--offset-0">
           <h4 class="ae-u-bolder">About</h4>
-          <p>Cluett Carpentry is an East London based cabinetry company specialising in bespoke furniture. The company is run by Dan, the propriertor. He has worked in the trades for the past ten year in carpentry, building, tiling, plastering but now concentrates exclusively on furniture. He works with a small team of makers and artists and brings an interesting holistic view to furniture production.</p>
+          <p><?php echo $about; ?></p>
         </div>
       </div>
 
       <div class="ae-grid au-xs-ta-center au-mb-4 au-pt-4">
-        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="https://api.adorable.io/avatars/285/dan.png" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">Dan</h5>
-          <p class="ae-u-bolder au-mb-3">Captain</p>
-          <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/staff/dan.jpg" alt="" class="au-mb-3 s fader">
+          <h5 class="ae-u-bolder">Dan</h5>
+          <p class="ae-u-bolder au-mb-3">Director</p>
+          <p class="au-lg-ta-center au-mb-3 au-pl-2 au-pr-2">Ten years in the trades, now moved from the workshop to the office to better consume coffee and cake as well as plan and run your jobs.</p>
         </div>
-        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="https://api.adorable.io/avatars/285/someone.png" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">This Guy</h5>
-          <p class="ae-u-bolder au-mb-3">Master Craftsman</p>
-          <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/staff/gilberto.jpg" alt="" class="au-mb-3 s fader">
+          <h5 class="ae-u-bolder">Gilberto</h5>
+          <p class="ae-u-bolder au-mb-3">Senior Cabinet Maker</p>
+          <p class="au-lg-ta-center au-mb-3 au-pl-2 au-pr-2">30 years a carpenter in Brazil, Italy and England. He runs the workshop making and overseeing the producton of our furniture.</p>
         </div>
-        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="https://api.adorable.io/avatars/285/them.png" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">This Guy</h5>
-          <p class="ae-u-bolder au-mb-3">Master Craftsman</p>
-          <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/staff/stephane.jpg" alt="" class="au-mb-3 s fader">
+          <h5 class="ae-u-bolder">Stephane</h5>
+          <p class="ae-u-bolder au-mb-3">Cabinet Maker</p>
+          <p class="au-lg-ta-center au-mb-3 au-pl-2 au-pr-2">Working side by side with Gilberto to produce pieces for boats and homes while showing us all how to rock a set of dungarees.</p>
         </div>
-        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="https://api.adorable.io/avatars/285/those.png" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">This Guy</h5>
-          <p class="ae-u-bolder au-mb-3">Master Craftsman</p>
-          <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/staff/nope.jpg" alt="" class="au-mb-3 s fader">
+          <h5 class="ae-u-bolder">Roberta</h5>
+          <p class="ae-u-bolder au-mb-3">Restorer and Finisher</p>
+          <p class="au-lg-ta-center au-mb-3 au-pl-2 au-pr-2">Our Italian expert with an eye for detail and a steady hand.</p>
         </div>
-        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="https://api.adorable.io/avatars/285/sping.png" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">This Guy</h5>
-          <p class="ae-u-bolder au-mb-3">Master Craftsman</p>
-          <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/staff/nope.jpg" alt="" class="au-mb-3 s fader">
+          <h5 class="ae-u-bolder">Bradley</h5>
+          <p class="ae-u-bolder au-mb-3">Finisher and Designer</p>
+          <p class="au-lg-ta-center au-mb-3 au-pl-2 au-pr-2">Producing beautiful interiors and bringing them to life.</p>
         </div>
-        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="https://api.adorable.io/avatars/285/parp.png" alt="" class="au-mb-3">
-          <h5 class="ae-u-bolder au-mt-2">Recycled Robot</h5>
+        <div class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img src="assets/img/staff/rr.jpg" alt="" class="au-mb-3 s fader">
+          <h5 class="ae-u-bolder"><a href="https://recycledrobot.co.uk" target="_blank">Recycled Robot</a></h5>
           <p class="ae-u-bolder au-mb-3">Developer</p>
-          <p class="au-lg-ta-center au-mb-3 au-pl-4 au-pr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p class="au-lg-ta-center au-mb-3 au-pl-2 au-pr-2">Code Monkey pushing for a better future for you and your machines.</p>
         </div>
       </div>
 
@@ -53,12 +54,6 @@
       </p>
       <p class="quote">
         Great work at a good price. Narrow boat friendly!
-      </p>
-
-
-
-      <p class="au-flex au-pt-4 group-buttons">
-        <a href="contact.php" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Get in contact<span class="arrow-cont"><svg><use xlink:href="assets/img/symbols.svg#arrow"></use></svg></span></a>
       </p>
 
     </div>
