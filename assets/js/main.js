@@ -8,7 +8,6 @@ var formFunc = function() {
   var phone = $(".form input[ name = phone ]").val();
   var email = $(".form input[ name = email ]").val();
   var subject = $(".form input[ name = subject ]").val();
-  var service = $(".form select").val();
   var message = $(".form textarea").val();
 
   if (name === "") {
@@ -26,7 +25,12 @@ var formFunc = function() {
     $(".emailErr").parent().fadeIn("slow");
     return;
   }
-  else if (subject.length === 0) {
+  else if (subject.length > 0) {
+    $(".messageErr").html("Please enter a poo");
+    $(".messageErr").parent().fadeIn("slow");
+    return;
+  }
+  else if (message.length === 0) {
     $(".messageErr").html("Please enter a message");
     $(".messageErr").parent().fadeIn("slow");
     return;
@@ -40,19 +44,20 @@ var formFunc = function() {
       name: name,
       email: email,
       phone: phone,
-      service: service,
       message: message
     },
     failure: function(data) {
       $('.fields').fadeOut(1000, function() {
         $('.fail').fadeIn(1000);
       });
+      //console.log(data);
     },
     success: function(data) {
       $('.fields').fadeOut(1000, function() {
         $("success h2").html(data);
         $('.success').fadeIn(1000);
       });
+      //console.log(data);
     }
   });
 };

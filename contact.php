@@ -6,9 +6,9 @@
       <div class="ae-grid au-pt-2">
         <div class="ae-grid__item item-lg-6 item-lg--offset-0">
           <h4 class="ae-u-bolder">Contact</h4>
-          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="494" id="gmap_canvas" src="https://maps.google.com/maps?q=Cluett Carpentry&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{overflow:hidden;height:494px;width:100%;}.gmap_canvas {background:none!important;height:494px;width:600px;}</style></div>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="494" id="gmap_canvas" src="https://maps.google.com/maps?q=Cluett Carpentry&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{overflow:hidden;height:494px;width:100%;}.gmap_canvas {background:none!important;height:494px;width:100%;}</style></div>
           <!--p>Say hello using the <a href="#contact-form">contact form.</a><br>We're standing by!</p-->
-          <p class="tp"><span class="contact__phone"> <span class="rk-light-color"></span> <?php echo $number; ?></span><!--br><span class="contact__email au-block au-truncate"> <span class="rk-light-color">Email: &nbsp;</span><a href="#0">info@cluettcarpentry.com</a></span-->
+          <p class="tp"><span class="contact__phone"> <span class="rk-light-color"></span> <span class="tely" data-text="<?php echo $number; ?>"></span><!--br><span class="contact__email au-block au-truncate"> <span class="rk-light-color">Email: &nbsp;</span><a href="#0">info@cluettcarpentry.com</a></span-->
             <br>
         </div>
         <div class="ae-grid__item item-lg-6 item-lg--offset-0">
@@ -68,11 +68,11 @@
           <div class="result">
               <div class="success">
                   <br><br><br><br>
-                  <h4 class="has-text-centered">Message sent!<br>I'll be in contact shortly.</h4>
+                  <h4 class="centerey">Message sent!</h4>
               </div>
               <div class="fail">
                   <br><br><br><br>
-                  <h4 class="has-text-centered">Sorry the server seems to be having some difficulty. Please try again later or call, find me on social media etc.</h4>
+                  <h4 class="centerey">Sorry the server seems to be having some difficulty. Please try again later or call, find me on social media etc.</h4>
               </div>
           </div>
         </div>

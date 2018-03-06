@@ -28,6 +28,10 @@ body.fade-out {
   }
 }
 
+.maily:before, .tely:before{
+  content: attr(data-text);
+}
+
 .rk-container--full {
   width: 100%;
   max-width: 100%;
@@ -2593,47 +2597,6 @@ a.is-outlined:hover {
   margin-bottom: 25%;
 }
 
-.materialboxed {
-  display: block;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-  position: relative;
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
-  -webkit-backface-visibility: hidden;
-}
-
-.materialboxed:hover:not(.active) {
-  opacity: .8;
-}
-
-.materialboxed.active {
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
-}
-
-#materialbox-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #292929;
-  z-index: 1000;
-  will-change: opacity;
-}
-
-.materialbox-caption {
-  position: fixed;
-  display: none;
-  color: #fff;
-  line-height: 50px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.centerey {
   text-align: center;
-  padding: 0% 15%;
-  height: 50px;
-  z-index: 1000;
-  -webkit-font-smoothing: antialiased;
 }
