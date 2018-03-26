@@ -15,10 +15,10 @@ try {
     //Server settings
     $mail->SMTPDebug = 1;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'mail3.gridhost.co.uk';  // Specify main and backup SMTP servers
+    $mail->Host = 'XXXXXXX';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'impshum@impshum.co.uk';                 // SMTP username
-    $mail->Password = '2nbd-2ksk-help';                           // SMTP password
+    $mail->Username = 'XXXXXXX';                 // SMTP username
+    $mail->Password = 'XXXXXXX';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
